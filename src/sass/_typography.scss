@@ -57,3 +57,12 @@ p {
     font-weight: 600;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Crimson Text';
+    src: url('../fonts/crimson-text/crimson-text-italic.woff2') format('woff2'),
+         url('../fonts/crimson-text/crimson-text-italic.woff') format('woff'),
+         url('../fonts/crimson-text/crimson-text-italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
