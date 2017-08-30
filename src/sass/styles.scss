@@ -1,0 +1,74 @@
+/*!
+* Theme Name:  Kristen Kriens | Portfolio Site
+* Theme URI:  http: //kristenkriens.com;
+* Description:  Kristen Kriens | Portfolio Site. Created by Kristen Kriens.
+* Version:  1.0
+* Author:  Kristen Kriens
+* Author URI:  http: //kristenkriens.com
+*/
+
+@import 'normalize';
+@import 'variables';
+@import 'typography';
+@import 'home';
+@import 'header';
+@import 'footer';
+
+/*
+====================================
+Default Styling
+====================================
+*/
+
+html, body {
+	height: 100%;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-family: $font;
+	font-size: 14px;
+	line-height: 1.75;
+}
+
+.wrapper {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.accessible {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	overflow: hidden;
+	border: 0 none !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px;
+}
+
+.skipnav {
+	&:focus, &:active {
+		position: absolute !important;
+		top: 5px !important;
+		left: 42% !important;
+		width: 16%;
+		background-color: #000;
+		padding: 10px;
+		color: #fff;
+		z-index: 9999;
+		text-align: center;
+		clip: inherit;
+		overflow: hidden;
+		border: 0 none !important;
+		width: auto !important;
+		height: auto !important;
+		margin: inherit;
+	}
+}
