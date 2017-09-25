@@ -1,50 +1,593 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link type="image/png" href="dist/images/favicon.png" rel="icon">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Abstract | Home</title>
-	<link rel="stylesheet" type="text/css" href="dist/css/styles.css">
-</head>
-<body>
-	<a href="#main" class="skipnav accessible">Skip to Main Content</a>
-	<header class="header">
-		<div class="wrapper">
-			<div class="header__left">
-				<a href="index.html"><img src="dist/images/icons_03.png" alt="Absctract Logo" title="Absctract Logo"></a>
-			</div>
-			<div class="header__right">
-				<div class="header__mobile">
-					<div class="header__mobile-bar header__mobile-bar--top"></div>
-					<div class="header__mobile-bar header__mobile-bar--middle"></div>
-					<div class="header__mobile-bar header__mobile-bar--bottom"></div>
+<html>
+	<head>
+		<title>Abstract | Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="image/png" href="dist/images/favicon.png" rel="icon">
+		<link rel="stylesheet" type="text/css" href="dist/css/styles.css">
+	</head>
+	<body>
+		<a href="#home" class="skipnav accessible">Skip to Main Content</a>
+		<header class="header">
+			<div class="wrapper">
+				<div class="header__left">
+					<h1 class="accessible">Abstract</h1>
+					<a href="index.html"><img src="dist/images/icons_03.png" alt="Absctract Logo" title="Absctract Logo" class="header__logo"></a>
 				</div>
-				<nav class="header__nav">
-					<ul>
-						<li><a href="#home" class="active">Home</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
+				<div class="header__right">
+					<nav class="header__nav">
+						<ul>
+							<li class="active"><a href="#home">Home</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+					<div class="header__hamburger">
+						<div class="header__hamburger-bar header__hamburger-bar--top"></div>
+						<div class="header__hamburger-bar header__hamburger-bar--middle"></div>
+						<div class="header__hamburger-bar header__hamburger-bar--bottom"></div>
+					</div>
+				</div>
+				<div class="header__mobile">
+					<div class="header__hamburger header__hamburger--open">
+						<div class="header__hamburger-bar header__hamburger-bar--top"></div>
+						<div class="header__hamburger-bar header__hamburger-bar--middle"></div>
+						<div class="header__hamburger-bar header__hamburger-bar--bottom"></div>
+					</div>
+					<nav class="header__mobile-nav">
+						<ul>
+							<li class="active"><a href="#home">Home</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
-		</div>
-	</header>
-	<div class="hero">
-		<div class="hero__text">
-			<h2>We are Modern</h2>
-			<h3>Simplify your Business</h3>
-		</div>
-	</div>
-	<main id="main">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum odio dolorem quidem suscipit consequuntur aperiam rem molestias sequi ea maiores dignissimos eius, dolore eaque debitis provident blanditiis quae, officia amet?</p>
-	</main>
-	<footer>
-	</footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="dist/js/main.min.js"></script>
-</body>
+		</header>
+		<main>
+			<section id="home" class="hero">
+				<div class="hero__text">
+					<h2>We are Modern</h2>
+					<h3>Simplify your Business</h3>
+					<a href="#services"><button>See More</button></a>
+				</div>
+			</section>
+			<section id="services" class="services">
+				<div class="wrapper">
+					<div class="heading">
+						<div class="heading__icon">
+							<img src="dist/images/icon_01.png" aria-hidden="true">
+						</div>
+						<h2>Our Services</h2>
+						<h3>Lorem Ipsum is simply dummy text</h3>
+					</div>
+					<div class="services__items">
+						<div class="services__item">
+							<div class="services__item-image">
+								<img src="dist/images/icons_11.png" aria-hidden="true">
+							</div>
+							<div class="services__item-text">
+								<h4>Web Development</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__item-image">
+								<img src="dist/images/icons_13.png" aria-hidden="true">
+							</div>
+							<div class="services__item-text">
+								<h4>Motion Graphic</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__item-image">
+								<img src="dist/images/icons_16.png" aria-hidden="true">
+							</div>
+							<div class="services__item-text">
+								<h4>Branding Design</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__item-image">
+								<img src="dist/images/icons_22.png" aria-hidden="true">
+							</div>
+							<div class="services__item-text">
+								<h4>Furniture Design</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__item-image">
+								<img src="dist/images/icons_24.png" aria-hidden="true">
+							</div>
+							<div class="services__item-text">
+								<h4>Illustration</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__item-image">
+								<img src="dist/images/icons_26.png" aria-hidden="true">
+							</div>
+							<div class="services__item-text">
+								<h4>Industrial Design</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="portfolio" class="portfolio">
+				<div class="wrapper">
+					<div class="heading">
+						<div class="heading__icon">
+							<img src="dist/images/icon_02.png" aria-hidden="true">
+						</div>
+						<h2>Our Portfolio</h2>
+						<h3>Show Amazing Work</h3>
+					</div>
+					<div class="portfolio__filter">
+						<button class="portfolio__filter-button">Branding Design</button>
+						<button class="portfolio__filter-button">Photography</button>
+						<button class="portfolio__filter-button">Web Design</button>
+						<button class="portfolio__filter-button">Digital Art</button>
+						<button class="portfolio__filter-button">+</button>
+					</div>
+				</div>
+				<div class="portfolio__items">
+					<div class="portfolio__item">
+						<img src="dist/images/portfolio_05.jpg" alt="Portfolio Item 1" title="Portfolio Item 1">
+						<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+					</div>
+					<div class="portfolio__item">
+						<img src="dist/images/portfolio_06.jpg" alt="Portfolio Item 2" title="Portfolio Item 2">
+						<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+					</div>
+					<div class="portfolio__item">
+						<img src="dist/images/portfolio_02.jpg" alt="Portfolio Item 3" title="Portfolio Item 3">
+						<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+					</div>
+					<div class="portfolio__item">
+						<img src="dist/images/portfolio_03.jpg" alt="Portfolio Item 4" title="Portfolio Item 4">
+						<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+					</div>
+					<div class="portfolio__item">
+						<img src="dist/images/portfolio_04.jpg" alt="Portfolio Item 5" title="Portfolio Item 5">
+						<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+					</div>
+					<div class="portfolio__item">
+						<img src="dist/images/portfolio_01.png" alt="Portfolio Item 6" title="Portfolio Item 6">
+						<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+					</div>
+				</div>
+			</section>
+			<section class="divider divider--1">
+				<div class="wrapper">
+					<div class="divider__text">
+						<h4 class="divider__text-title">Do You like Abstract?</h4>
+						<h4 class="divider__text-title">Buy it now and try everything</h4>
+					</div>
+					<div class="divider__button">
+						<button>Purchase</button>
+					</div>
+				</div>
+			</section>
+			<section id="about" class="about">
+				<div class="wrapper">
+					<div class="heading">
+						<div class="heading__icon">
+							<img src="dist/images/icon_03.png" aria-hidden="true">
+						</div>
+						<h2>Who We Are</h2>
+						<h3>About Us</h3>
+					</div>
+					<div class="about__image">
+						<img src="dist/images/mac_screen_mockup.png" alt="About Us Image" title="About Us Image">
+					</div>
+					<div class="about__text">
+						<h4>About Us</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante ex, fermentum vel libero egeted interdum semper libero. Curabitur egestas, arcu id tempor convallis, ex tortor efficitur turpis eget mattis tellus risus ut dolor tempus hendrerit vehicula. Curabitur.</p>
+						<ul>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit</li>
+							<li>Lorem ipsum dolor</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="team">
+				<div class="wrapper">
+					<div class="heading">
+						<h2>Our Team</h2>
+					</div>
+					<div class="team__members">
+						<div class="team__member">
+							<img src="dist/images/portrait2.jpg" alt="Monica Smith" title="Monica Smith" class="team__member-image">
+							<div class="team__member-text">
+								<h4>Monica Smith</h4>
+								<p>UX Designer</p>
+								<div class="team__member-icons">
+									<div class="team__member-icon team__member-icon--facebook">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+										<div class="team__member-icon-hover"></div>
+									</div>
+									<div class="team__member-icon team__member-icon--dribbble">
+										<i class="fa fa-dribbble" aria-hidden="true"></i>
+										<div class="team__member-icon-hover"></div>
+									</div>
+									<div class="team__member-icon team__member-icon--behance">
+										<i class="fa fa-behance" aria-hidden="true"></i>
+										<div class="team__member-icon-hover"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="team__member">
+							<img src="dist/images/portrait3.jpg" alt="Carter Payne" title="Carter Payne" class="team__member-image">
+							<div class="team__member-text">
+								<h4>Carter Payne</h4>
+								<p>Developer</p>
+								<div class="team__member-icons">
+									<div class="team__member-icon team__member-icon--facebook">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+										<div class="team__member-icon-hover"></div>
+									</div>
+									<div class="team__member-icon team__member-icon--dribbble">
+										<i class="fa fa-dribbble" aria-hidden="true"></i>
+										<div class="team__member-icon-hover"></div>
+									</div>
+									<div class="team__member-icon team__member-icon--behance">
+										<i class="fa fa-behance" aria-hidden="true"></i>
+										<div class="team__member-icon-hover"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="team__member">
+							<img src="dist/images/portrait4.jpg" alt="Millika Mong" title="Millika Mong" class="team__member-image">
+							<div class="team__member-text">
+								<h4>Millika Mong</h4>
+								<p>Programmer</p>
+								<div class="team__member-icons">
+									<div class="team__member-icon team__member-icon--facebook">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+										<div class="team__member-icon-hover"></div>
+									</div>
+									<div class="team__member-icon team__member-icon--dribbble">
+										<i class="fa fa-dribbble" aria-hidden="true"></i>
+										<div class="team__member-icon-hover"></div>
+									</div>
+									<div class="team__member-icon team__member-icon--behance">
+										<i class="fa fa-behance" aria-hidden="true"></i>
+										<div class="team__member-icon-hover"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="clients" class="clients">
+				<div class="wrapper">
+					<div class="heading">
+						<div class="heading__icon">
+							<img src="dist/images/icon_04.png" aria-hidden="true">
+						</div>
+						<h2>Clients Say</h2>
+						<h3>Happy Clients</h3>
+					</div>
+					<div class="clients__cards">
+						<div class="clients__cards-inner">
+							<div class="clients__card">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+								<h4>Vicente Hamlet</h4>
+								<p>Marketing Officer</p>
+								<div class="clients__card-image">
+									<img src="dist/images/vincente.jpg" alt="Vicente Hamlet" title="Vicente Hamlet">
+								</div>
+							</div>
+							<div class="clients__card">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+								<h4>Klaudia Lesia</h4>
+								<p>CEO</p>
+								<div class="clients__card-image">
+									<img src="dist/images/klaudia.jpg" alt="Klaudia Lesia" title="Klaudia Lesia">
+								</div>
+							</div>
+							<div class="clients__card">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+								<h4>Isak Jaya</h4>
+								<p>Account Representative</p>
+								<div class="clients__card-image">
+									<img src="dist/images/isak.jpg" alt="Isak Jaya" title="Isak Jaya">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clients__nav">
+						<div class="clients__nav-dot"></div>
+						<div class="clients__nav-dot clients__nav-dot--current"></div>
+						<div class="clients__nav-dot"></div>
+					</div>
+				</div>
+			</section>
+			<section id="process" class="process">
+				<div class="wrapper">
+					<div class="heading">
+						<div class="heading__icon">
+							<img src="dist/images/icon_05.png" aria-hidden="true">
+						</div>
+						<h2>Work Process</h2>
+						<h3>Show Our Work</h3>
+					</div>
+					<div class="process__items">
+						<div class="process__item">
+							<div class="process__item-number">01</div>
+							<img src="dist/images/service_01.png" alt="Brainstorming" title="Brainstorming">
+							<h4>Brainstorming</h4>
+						</div>
+						<div class="process__item">
+							<div class="process__item-number">02</div>
+							<img src="dist/images/service_02.png" alt="Concept Prototype" title="Concept Prototype">
+							<h4>Concept Prototype</h4>
+						</div>
+						<div class="process__item">
+							<div class="process__item-number">03</div>
+							<img src="dist/images/service_03.png" alt="Design Layout" title="Design Layout">
+							<h4>Design Layout</h4>
+						</div>
+						<div class="process__item">
+							<div class="process__item-number">04</div>
+							<img src="dist/images/service_04.png" alt="Development" title="Development">
+							<h4>Development</h4>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="divider divider--2">
+				<div class="wrapper">
+					<div class="divider__image">
+						<img src="dist/images/ipad.png" aria-hidden="true">
+					</div>
+					<div class="divider__text">
+						<h4 class="divider__text-title divider__text-title--uppercase divider__text-title--accent">WE WORK</h4>
+						<h4 class="divider__text-title divider__text-title--uppercase">WITH PASSION</h4>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+					</div>
+				</div>
+			</section>
+			<section id="pricing" class="pricing">
+				<div class="wrapper">
+					<div class="heading">
+						<div class="heading__icon">
+							<img src="dist/images/icon_06.png" aria-hidden="true">
+						</div>
+						<h2>Pricing</h2>
+						<h3>Get Your Plans for Work</h3>
+					</div>
+					<div class="pricing__tables">
+						<div class="pricing__table">
+							<h4 class="pricing__table-title">Website Design</h4>
+							<div class="pricing__table-price">$29</div>
+							<div class="pricing__table-features">Features</div>
+							<ul class="pricing__table-list">
+								<li><i class="fa fa-check"></i>10 Pages Website Design</li>
+								<li><i class="fa fa-check"></i>Joomla & Wordpress Ready</li>
+								<li><i class="fa fa-check"></i>3 Alternative Designs</li>
+								<li><i class="fa fa-check"></i>Free 1 Year Domain</li>
+								<li><i class="fa fa-check"></i>10 GB Free Hosting</li>
+								<li><i class="fa fa-check"></i>Unlimited Revision</li>
+								<li><i class="fa fa-check"></i>3 Months Support</li>
+							</ul>
+							<div class="pricing__table-button">
+								<button>Order Now</button>
+							</div>
+						</div>
+						<div class="pricing__table pricing__table--accent">
+							<h4 class="pricing__table-title">All in One</h4>
+							<div class="pricing__table-price">$99</div>
+							<div class="pricing__table-features">Features</div>
+							<ul class="pricing__table-list">
+								<li><i class="fa fa-check"></i>10 Pages Website Design</li>
+								<li><i class="fa fa-check"></i>Joomla & Wordpress Ready</li>
+								<li><i class="fa fa-check"></i>3 Alternative Designs</li>
+								<li><i class="fa fa-check"></i>Free 1 Year Domain</li>
+								<li><i class="fa fa-check"></i>10 GB Free Hosting</li>
+								<li><i class="fa fa-check"></i>Unlimited Revision</li>
+								<li><i class="fa fa-check"></i>3 Months Support</li>
+							</ul>
+							<div class="pricing__table-button">
+								<button>Order Now</button>
+							</div>
+						</div>
+						<div class="pricing__table">
+							<h4 class="pricing__table-title">Website Development</h4>
+							<div class="pricing__table-price">$59</div>
+							<div class="pricing__table-features">Features</div>
+							<ul class="pricing__table-list">
+								<li><i class="fa fa-check"></i>10 Pages Website Design</li>
+								<li><i class="fa fa-check"></i>Joomla & Wordpress Ready</li>
+								<li><i class="fa fa-check"></i>3 Alternative Designs</li>
+								<li><i class="fa fa-check"></i>Free 1 Year Domain</li>
+								<li><i class="fa fa-check"></i>10 GB Free Hosting</li>
+								<li><i class="fa fa-check"></i>Unlimited Revision</li>
+								<li><i class="fa fa-check"></i>3 Months Support</li>
+							</ul>
+							<div class="pricing__table-button">
+								<button>Order Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="percentages">
+				<div class="wrapper">
+					<div class="percentages__items">
+						<div class="percentages__item">
+							<div id="chart-1" class="percentages__circle"></div>
+							<div class="percentages__text">
+								<div class="percentages__number">90%</div>
+								<h4 class="percentages__title">Photoshop</h4>
+							</div>
+						</div>
+						<div class="percentages__item">
+							<div id="chart-2" class="percentages__circle"></div>
+							<div class="percentages__text">
+								<div class="percentages__number">80%</div>
+								<h4 class="percentages__title">HTML/CSS</h4>
+							</div>
+						</div>
+						<div class="percentages__item">
+							<div id="chart-3" class="percentages__circle"></div>
+							<div class="percentages__text">
+								<div class="percentages__number">65%</div>
+								<h4 class="percentages__title">Wordpress</h4>
+							</div>
+						</div>
+						<div class="percentages__item">
+							<div id="chart-4" class="percentages__circle"></div>
+							<div class="percentages__text">
+								<div class="percentages__number">85%</div>
+								<h4 class="percentages__title">UX/UI</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contact" class="contact">
+				<div class="wrapper">
+					<div class="heading">
+						<div class="heading__icon">
+							<img src="dist/images/icon_03.png" aria-hidden="true">
+						</div>
+						<h2>Get In Touch</h2>
+						<h3>Support First</h3>
+					</div>
+					<form class="contact__form">
+						<div class="contact__form-input contact__form-input--required contact__form-input--third">
+							<label for="name"><span class="required">*</span> Name</label>
+							<input type="text" name="name" required>
+						</div>
+						<div class="contact__form-input contact__form-input--required contact__form-input--third">
+							<label for="email"><span class="required">*</span> Email</label>
+							<input type="email" name="email" required>
+						</div>
+						<div class="contact__form-input contact__form-input--required contact__form-input--third">
+							<label for="subject"><span class="required">*</span> Subject</label>
+							<input type="text" name="subject" required>
+						</div>
+						<div class="contact__form-input contact__form-input--full">
+							<textarea name="content" placeholder="CONTENT . . ." required></textarea>
+						</div>
+						<input type="submit" value="Send Me" class="button contact__form-button">
+					</form>
+				</div>
+				<div id="map" class="contact__map"></div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer__top">
+					<div class="footer__row">
+						<h4>Abstract</h4>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					</div>
+					<div class="footer__row">
+						<h4>Links</h4>
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+					<div class="footer__row">
+						<h4>Twitter Widget</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+						<div class="footer__row-twitter"><i class="fa fa-twitter" aria-hidden="true"></i> 01 day ago</div>
+					</div>
+					<div class="footer__row">
+						<h4>Instagram</h4>
+						<div class="footer__instagram-images">
+							<div class="footer__instagram-image">
+								<img src="dist/images/insta_small5.jpg" alt="Instagram Image 1" title="Instagram Image 1">
+							</div>
+							<div class="footer__instagram-image">
+								<img src="dist/images/insta_small4.jpg" alt="Instagram Image 2" title="Instagram Image 2">
+							</div>
+							<div class="footer__instagram-image">
+								<img src="dist/images/insta_small3.jpg" alt="Instagram Image 3" title="Instagram Image 3">
+							</div>
+							<div class="footer__instagram-image">
+								<img src="dist/images/insta_small2.jpg" alt="Instagram Image 4" title="Instagram Image 4">
+							</div>
+							<div class="footer__instagram-image">
+								<img src="dist/images/insta_small1.jpg" alt="Instagram Image 5" title="Instagram Image 5">
+							</div>
+							<div class="footer__instagram-image">
+								<img src="dist/images/insta_small6.jpg" alt="Instagram Image 6" title="Instagram Image 6">
+							</div>
+						</div>
+						<div class="footer__modal">
+							<div class="footer__modal-inner">
+								<div class="footer__modal-image">
+									<img src="dist/images/insta_01.jpg" alt="Instagram Image 1" title="Instagram Image 1">
+									<div class="footer__modal-next"><i class="fa fa-chevron-right" alt="Next" title="Next"></i></div>
+								</div>
+								<div class="footer__modal-image">
+									<div class="footer__modal-prev"><i class="fa fa-chevron-left" alt="Previous" title="Previous"></i></div>
+									<img src="dist/images/insta_02.jpg" alt="Instagram Image 2" title="Instagram Image 2">
+									<div class="footer__modal-next"><i class="fa fa-chevron-right" alt="Next" title="Next"></i></div>
+								</div>
+								<div class="footer__modal-image">
+									<div class="footer__modal-prev"><i class="fa fa-chevron-left" alt="Previous" title="Previous"></i></div>
+									<img src="dist/images/insta_03.jpg" alt="Instagram Image 3" title="Instagram Image 3">
+									<div class="footer__modal-next"><i class="fa fa-chevron-right" alt="Next" title="Next"></i></div>
+								</div>
+								<div class="footer__modal-image">
+									<div class="footer__modal-prev"><i class="fa fa-chevron-left" alt="Previous" title="Previous"></i></div>
+									<img src="dist/images/insta_04.jpg" alt="Instagram Image 4" title="Instagram Image 4">
+									<div class="footer__modal-next"><i class="fa fa-chevron-right" alt="Next" title="Next"></i></div>
+								</div>
+								<div class="footer__modal-image">
+									<div class="footer__modal-prev"><i class="fa fa-chevron-left" alt="Previous" title="Previous"></i></div>
+									<img src="dist/images/insta_05.jpg" alt="Instagram Image 5" title="Instagram Image 5">
+									<div class="footer__modal-next"><i class="fa fa-chevron-right" alt="Next" title="Next"></i></div>
+								</div>
+								<div class="footer__modal-image">
+									<div class="footer__modal-prev"><i class="fa fa-chevron-left" alt="Previous" title="Previous"></i></div>
+									<img src="dist/images/insta_06.jpg" alt="Instagram Image 6" title="Instagram Image 6">
+								</div>
+							</div>
+							<div class="footer__modal-exit"><i class="fa fa-times" alt="Close" title="Close"></i></div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<a href="#" class="footer__social">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+					<a href="#" class="footer__social">
+						<i class="fa fa-pinterest-p" aria-hidden="true"></i>
+					</a>
+					<a href="#" class="footer__social">
+						<i class="fa fa-google-plus" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://use.fontawesome.com/07dc8c3210.js"></script>
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://rawgit.com/morr/jquery.appear/master/jquery.appear.js"></script>
+		<script src="dist/js/scripts.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_4I_KwhnPqm56Pim7067AxkYmf7F6sI4&callback=initMap" async defer></script>
+	</body>
 </html>
