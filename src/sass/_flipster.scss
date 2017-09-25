@@ -1,0 +1,40 @@
+.flipster {
+  display: block;
+  position: relative;
+}
+.flipster:focus {
+  outline: none;
+}
+.flipster__container,
+.flipster__item {
+  list-style-type: none;
+  position: relative;
+}
+.flipster__container {
+  display: block;
+  white-space: nowrap;
+  transform-origin: 50% 50%;
+  height: auto!important;
+}
+.flipster__item {
+  display: inline-block;
+  white-space: normal;
+  word-spacing: normal;
+  vertical-align: bottom;
+}
+.flipster--click .flipster__item--past,
+.flipster--click .flipster__item--future {
+  cursor: pointer;
+}
+.flipster__item--past-2,
+.flipster__item--future-2 {
+  opacity: 0;
+}
+.flipster__item img {
+  max-width: 100%;
+}
+.flipster--flat .flipster__container,
+.flipster--flat .flipster__item,
+.flipster--flat .flipster__item__content {
+  transition: all 400ms ease-in-out;
+}

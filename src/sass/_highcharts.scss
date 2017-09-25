@@ -1,0 +1,19 @@
+.highcharts {
+  &-background {
+    fill: transparent;
+  }
+
+  &-point {
+    stroke: transparent;
+  }
+
+  &-point {
+    &.empty {
+      fill: $white;
+    }
+  }
+
+  &-legend-box {
+    display: none;
+  }
+}
