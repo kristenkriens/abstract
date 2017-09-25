@@ -38,8 +38,8 @@ gulp.task('scripts', function() {
 		.pipe(plumber({
 		  errorHandler: notify.onError("Error: <%= error.message %>")
 		}))
-		.pipe(concat('main.min.js'))
 		.pipe(uglify())
+		.pipe(concat('scripts.min.js'))
 		.pipe(gulp.dest('dist/js'))
 		.pipe(reload({stream:true}));
 });
