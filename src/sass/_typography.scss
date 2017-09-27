@@ -13,6 +13,10 @@ h2, .h2 {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 5px;
+
+  @media (max-width: $md-width) {
+    font-size: 26px;
+  }
 }
 
 h3, .h3 {
