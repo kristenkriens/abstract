@@ -33,12 +33,6 @@
   	}
   }
 
-  &__mobile-nav {
-    li:after {
-      background-color: $white!important;
-    }
-  }
-
   ul {
     list-style-type: none;
     margin: 0;
@@ -55,8 +49,8 @@
         left: 50%;
         transform: translateX(-50%);
         width: 0;
-        height: 3px;
-        background-color: $magenta;
+        height: 2px;
+        background-color: $white;
         transition: 200ms width ease;
       }
 
