@@ -13,9 +13,14 @@
     padding-bottom: 20px;
   }
 
+  &__right {
+    @media (max-width: $md-width) {
+      margin-right: 60px;
+    }
+  }
+
   &__logo {
     display: block;
-    margin-right: 60px;
   }
 
   &__nav {
