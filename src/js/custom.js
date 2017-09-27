@@ -13,6 +13,19 @@ $(function() {
     }
   });
 
+  $(window).on("scroll", function() {
+
+      var y = $(this).scrollTop();
+
+      $('.header__mobile-nav li').each(function (event) {
+          if (y >= $($(this).find('a').attr('href')).offset().top - 95) {
+              $('.header__mobile-nav li').not(this).removeClass('active');
+              $(this).addClass('active');
+          }
+      });
+
+  });
+
   $('.header__hamburger').on('click', function() {
     $('.header__mobile').toggleClass('header__mobile--open');
   });
