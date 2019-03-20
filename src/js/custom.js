@@ -18,9 +18,12 @@ $(function() {
       var y = $(this).scrollTop();
 
       $('.header__mobile-nav li').each(function (event) {
-          if (y >= $($(this).find('a').attr('href')).offset().top - 95) {
-              $('.header__mobile-nav li').not(this).removeClass('active');
-              $(this).addClass('active');
+          var href = $($(this).find('a').attr('href'));
+          if(href.selector !== '#') {
+            if (y >= href.offset().top - 95) {
+                $('.header__mobile-nav li').not(this).removeClass('active');
+                $(this).addClass('active');
+            }
           }
       });
 

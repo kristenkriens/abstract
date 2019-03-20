@@ -8,7 +8,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "*",
+    "browser-sync": "^2.26.3",
     "gulp": "*",
     "gulp-autoprefixer": "*",
     "gulp-concat": "*",
@@ -16,9 +16,9 @@
     "gulp-minify-css": "*",
     "gulp-notify": "*",
     "gulp-plumber": "*",
+    "gulp-pug": "*",
     "gulp-sass": "*",
-    "gulp-sourcemaps": "*",
-    "gulp-uglify": "*",
-    "gulp-pug": "*"
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "*"
   }
 }
